@@ -43,7 +43,7 @@ let str = `
 
 *رقم المطور*🫡
 
-*+212774217717*
+*+212774217717* `
 conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
