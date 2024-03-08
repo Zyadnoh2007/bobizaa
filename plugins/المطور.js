@@ -19,7 +19,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let videoUrl = 'https://telegra.ph/file/c9bcf74d6049722227e52.mp4';
+let videoUrl = 'https://telegra.ph/file/9d56aa21a41402e454de8.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
@@ -35,22 +35,15 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-✧⏤✧⏤ *حالة* ⏤✧⏤✧⏤✧
-🦾 اهلا,* ${taguser}
-⩥ الوقت${uptime}
-⩥ التاريخ${date}
-⩥ المستخدمين${rtotalreg}
-⩥ المنصه ⩾ HEROKU
-✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧⏤✧
-⇟ *معلومات المطور* ⇟
-𐎄   🤿‏محمد 𓂄*اسم المطور*𓂁
+*مرحبا بك ايها المستخدم*🖤
 
-𐎄 𓂄 JOHAN ⚰𓂁*لقب المطور* 
+*✨ معك بوت مايكي*✨
 
-𐎄  𓂄 https://wa.me/+22247072475 ‬‏𓂁*رقم المطور*
+*🎃منصة البوت*[ *HEROKU*]
 
-𐎄𝐷𝐸𝑉 b𝐼𝑂 𓂄الضمير صوت هادىء، يخبرك بأن أحداً ينظر إليك. ليس العيب في أن نسقط، ولكن العيب أن لا تستطيع النهوض. خير للإنسان أن يندم على ما فعل من أن يتحسّر على ما لم يفعل. ليس من الصعب أن تضحّي من أجل صديق، ولكن من الصعب أن تجد الصديق الذي يستحق التضحية. مفتاح الفشل هو محاولة إرضاء كل شخص تعرفه𓂁‬`.trim();
+*رقم المطور*🫡
 
+*+212774217717*
 conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
