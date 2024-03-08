@@ -17,11 +17,11 @@ global.suittag = ['212774217717', '212774217717'];
 global.prems = ['212774217717', '212774217717'];
 
 global.packname = 'MIKEY-BOT ';
-global.author = '★MIKEY-BOT★';
-global.wm = '★MIKEY BOT★';
-global.titulowm = ' MIKEY ';
-global.titulowm2 = ` MIKEY `
-global.igfg = ' MIKEY ';
+global.author = '★مايكي-كن★';
+global.wm = '★مايكي-كن★';
+global.titulowm = ' مايكي ';
+global.titulowm2 = ` مايكي `
+global.igfg = ' مايكي ';
 global.wait = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
 
 global.imagen1 = fs.readFileSync('./Menu2.jpg');
@@ -43,8 +43,8 @@ global.año = d.toLocaleDateString('ar', {year: 'numeric'});
 global.tiempo = d.toLocaleString('en-US', {hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: true});
 //* ****************************
 global.wm2 = `▸ ${dia} ${fecha}\n▸ 𝚃𝚑𝚎 𝙼𝚢𝚜𝚝𝚒𝚌 - 𝙱𝚘𝚝`;
-global.gt = '★ZORO★';
-global.mysticbot = '★ZORO★';
+global.gt = '★مايكي★';
+global.mysticbot = '★مايكي★';
 global.md = 'https://chat.whatsapp.com/FrMwuvNFNOzGt0BqJmMeWJ';
 global.mysticbot = 'https://chat.whatsapp.com/FrMwuvNFNOzGt0BqJmMeWJ';
 global.waitt = '*⌛ _جاري التحميل..._*\n\n*▰▰▰▱▱▱▱▱*';
