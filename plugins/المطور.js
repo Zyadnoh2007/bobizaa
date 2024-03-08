@@ -19,7 +19,7 @@ let handler = async (m, {conn, usedPrefix, usedPrefix: _p, __dirname, text, isPr
     let uptime = clockString(_uptime)
 let who = m.quoted ? m.quoted.sender : m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender
 if (!(who in global.db.data.users)) throw `✳️ The user is not found in my database`
-let videoUrl = 'https://telegra.ph/file/9d56aa21a41402e454de8.mp4';
+let videoUrl = 'https://telegra.ph/file/0ac6631d1479b7502111e.mp4';
   let vn = './media/menu.mp3';
   const user = global.db.data.users[m.sender];
   const {money, joincount} = global.db.data.users[m.sender];
@@ -35,7 +35,7 @@ let more = String.fromCharCode(8206)
 let readMore = more.repeat(900) 
   const taguser = '@' +  m.sender.split('@s.whatsapp.net')[0];
 let str = ` 
-*مرحبا بك ايها المستخدم*🖤
+مرحبا بك ايها المستخدم*🖤
 
 *✨ معك بوت مايكي*✨
 
@@ -43,7 +43,9 @@ let str = `
 
 *رقم المطور*🫡
 
-*+212774217717* `
+*+212774217717*
+‬`.trim();
+
 conn.sendMessage(m.chat, {
         video: { url: videoUrl }, caption: str,
   mentions: [m.sender,global.conn.user.jid],
